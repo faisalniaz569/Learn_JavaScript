@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Strings one</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <script>
+        /* first example */
+        let text = "John Doe"; // String written inside quotes
+        document.getElementById("demo").innerHTML = text;
+
+        /* second example */
+        let carName1 = "Volvo XC60"; // Double quotes
+        let carName2 = 'Volvo XC60'; // Single quotes
+
+        document.getElementById("demo2").innerHTML =
+            carName1 + " " + carName2;
+
+        /* third example */
+        let answer1 = "It's alright";
+        let answer2 = "He is called 'Johnny'";
+        let answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo3").innerHTML =
+            answer1 + "<br>" + answer2 + "<br>" + answer3;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Strings</title>
+</head>
+
+<body>
+
+
+    <h2>String Length</h2>
+
+    <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+
+    <p>The length of the string is:</p>
+    <p id="demo"></p>
+
+    <hr />
+
+    <h2>Backslash escape character.</h2>
+
+    <p>The escape sequence \" inserts a double quote in a string.</p>
+
+    <p id="demo2"></p>
+
+    <hr />
+
+    <p>The escape sequence \' inserts a single quote in a string.</p>
+
+    <p id="demo3"></p>
+
+    <hr />
+
+    <p>The escape sequence \\ inserts a backslash in a string.</p>
+
+    <p id="demo4"></p>
+
+    <script>
+        /* 1st example */
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo").innerHTML = text.length;
+
+
+        /* 2nd example */
+        let text2 = "We are the so-called \"Vikings\" from the north.";
+        document.getElementById("demo2").innerHTML = text2;
+
+        /* 3rd example */
+        let text3 = 'It\'s alright.';
+        document.getElementById("demo3").innerHTML = text3;
+
+        /* 4th example */
+        let text4 = "The character \\ is called backslash.";
+        document.getElementById("demo4").innerHTML = text4;
+
+    </script>
+
+</body>
+
+</html>

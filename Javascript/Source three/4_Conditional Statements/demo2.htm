@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+
+    <h3>The else Statement</h3>
+
+    <!--
+        The else Statement
+        
+        if (condition) {
+              // block of code to be executed if the condition is true
+              
+          } else {
+          
+              // block of code to be executed if the condition is false
+          }
+    -->
+
+
+    <p>A time-based greeting:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const hour = new Date().getHours();
+        let greeting;
+
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+
+        document.getElementById("demo").innerHTML = greeting;
+
+    </script>
+
+</body>
+
+</html>

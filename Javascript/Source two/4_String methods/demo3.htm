@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Extracting String Parts</title>
+</head>
+
+<body>
+
+    <!-- 
+    
+    There are 3 methods for extracting a part of a string:
+
+    slice(start, end)
+    substring(start, end)
+    substr(start, length) 
+    
+    -->
+
+    <h3>String method: slice</h3>
+
+    <!--Slice Example:-->
+
+    <!-- 1st Example -->
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo"></p>
+
+    <!-- JavaScript counts positions from zero. First position is 0. Second position is 1. -->
+    <!-- 2nd Example: -->
+    <p>Extract a part of a string from position 7:</p>
+    <p id="demo2"></p>
+
+    <!--If a parameter is negative, the position is counted from the end of the string-->
+    <!-- 3rd Example: -->
+    <p>Extract a part of a string counting from the end:</p>
+    <p id="demo3"></p>
+
+
+    <!--slices out a portion of a string from position -12 to position -6:-->
+    <!-- 4th Example: -->
+    <p>Extract a part of a string and return the extracted parts in a new string:</p>
+    <p id="demo4"></p>
+
+
+    <h3>String method: substring</h3>
+
+    <!-- substring() is similar to slice() -->
+    <p id="demo5"></p>
+
+
+    <h3>String method: substr</h3>
+
+    <!-- substr() is similar to slice() -->
+    <p id="demo6"></p>
+
+    <p id="demo7"></p>
+
+    <p id="demo8"></p>
+
+    <script>
+        /* Slice */
+        /*1st Example*/
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(7, 13);
+        document.getElementById("demo").innerHTML = part;
+
+
+        /*2nd Example*/
+        let text2 = "Apple, Banana, Kiwi";
+        let part2 = text2.slice(7)
+        document.getElementById("demo2").innerHTML = part2;
+
+
+        /*3rd Example*/
+        let text3 = "Apple, Banana, Kiwi";
+        let part3 = text3.slice(-12);
+        document.getElementById("demo3").innerHTML = part3;
+
+
+        /*4th Example*/
+        let text4 = "Apple, Banana, Kiwi";
+        let part4 = text4.slice(-12, -6)
+        document.getElementById("demo4").innerHTML = part4;
+
+
+        /* Substring */
+        /*5th Example*/
+        let str = "Apple, Banana, Kiwi";
+        document.getElementById("demo5").innerHTML = str.substring(7, 13);
+
+
+        /* Substr */
+        /*6th Example*/
+        let str2 = "Apple, Banana, Kiwi";
+        document.getElementById("demo6").innerHTML = str2.substr(7, 6);
+
+
+        /*7th Example*/
+        let str3 = "Apple, Banana, Kiwi";
+        document.getElementById("demo7").innerHTML = str3.substr(7);
+
+        /*8th Example*/
+        let str4 = "Apple, Banana, Kiwi";
+        document.getElementById("demo8").innerHTML = str4.substr(-4);
+
+    </script>
+
+</body>
+
+</html>

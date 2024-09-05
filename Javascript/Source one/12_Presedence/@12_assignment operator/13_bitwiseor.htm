@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bitwise OR operator</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Bitwise OR Assignment</h2>
+    <h3>The |= Operator</h3>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 100;
+        x |= 5;
+        document.getElementById("demo").innerHTML = "Value of x is: " + x;
+        
+        
+        /*
+            Bitwise OR:
+            -------------
+            Performed of bits:
+            ------------------
+            
+            Operation       Result
+            ----------      -------
+            0   &   0       0           
+            0   &   1       1
+            1   &   0       1
+            1   &   1       1
+            
+            Operation                   Result
+            ----------                  -------
+            1111    &   0000            1111
+            1111    &   0001            1111
+            1111    &   0010            1111
+            
+        */
+        
+        /*
+        
+            Above Example result:
+            ---------------------
+            x = 100;   // 000001100100    ------  100
+            x |= 5;    // 000000000101    ------    5
+            
+            result:    // 000001100101    ------  101  
+        */
+
+    </script>
+
+
+</body>
+
+</html>

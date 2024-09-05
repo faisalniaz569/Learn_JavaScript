@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Button event</title>
+</head>
+
+<body>
+
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onclick and dblclick Attribute</h2>
+
+    <!--For onclick events-->
+    <!--1st event-->
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <p id="demo"></p>
+
+    <!--2nd event-->
+    <button onclick="this.innerHTML=Date()">The next time is?</button>
+
+
+    <!--3rd event-->
+    <p>Click the button to display the date.</p>
+    <button onclick="displayDate()">The third time is?</button>
+
+    <p id="demo2"></p>
+
+
+    <!--For dblclick events-->
+    <p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+
+    <p id="demo3"></p>
+
+
+    <script src="JS/myScript.js"></script>
+
+</body>
+
+</html>

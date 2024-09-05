@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boolean</title>
+</head>
+
+<body>
+
+    <p>
+        Very often, in programming, you will need a data type that can only have one of two values. <br>
+
+        <br> 1. YES / NO
+        <br> 2. ON / OFF
+        <br> 3. TRUE / FALSE
+    </p>
+
+    <p>Display the value of Boolean(10 > 9):</p>
+
+    <h3>Example: 01</h3>
+
+    <p id="demo"></p>
+
+    <h3>Example: 02</h3>
+    <p id="demo2"></p>
+
+    <h3>Example: 03</h3>
+    <p id="demo3"></p>
+
+    <h3>Example: 04</h3>
+    <p id="demo4"></p>
+
+    <h3>Example: 05</h3>
+    <p id="demo5"></p>
+
+    <h3>Example: 06</h3>
+    <p id="demo6"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = Boolean(10 > 9);
+
+        /*Example: 02*/
+        document.getElementById("demo2").innerHTML =
+            "100 is " + Boolean(100) + "<br>" +
+            "3.14 is " + Boolean(3.14) + "<br>" +
+            "-15 is " + Boolean(-15) + "<br>" +
+            "Any (not empty) string is " + Boolean("Hello") + "<br>" +
+            "Even the string 'false' is " + Boolean('false') + "<br>" +
+            "Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+
+        /*Example: 03*/
+
+        // let x = 0;
+        let x = -0;
+        document.getElementById("demo3").innerHTML = Boolean(x);
+
+        /*Example: 04*/
+        let y = "";
+        document.getElementById("demo4").innerHTML = Boolean("");
+
+        /*Example: 05*/
+        let x2;
+        document.getElementById("demo5").innerHTML = Boolean(x2);
+
+        /*Example: 06*/
+        let x3 = null;
+        document.getElementById("demo6").innerHTML = Boolean(x3);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+Javascript number methods are used in below:
+
+toString(), toExponential(), toFixed(), 
+toPrecision(), ValueOf().
+

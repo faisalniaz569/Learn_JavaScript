@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>String Methods</title>
+</head>
+
+<body>
+
+
+    <!-- 1st Example --->
+    <h2>Converting to Upper and Lower Case</h2>
+
+    <p>Convert string to upper case:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo">Hello World!</p>
+
+
+    <!-- 2nd Example -->
+    <p>Convert string to lower case:</p>
+
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo2">Hello World!</p>
+
+
+    <!-- 3rd Example -->
+    <h2>String Concat</h2>
+
+    <p>The concat() method joins two or more strings</p>
+
+    <p id="demo3"></p>
+
+
+    <!-- 4th Example -->
+    <p id="demo4"></p>
+
+    <script>
+        /*1st Example*/
+        function myFunction() {
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML =
+                text.toUpperCase();
+        }
+
+
+        /*2nd Example*/
+        function myFunction2() {
+            let text2 = document.getElementById("demo2").innerHTML;
+            document.getElementById("demo2").innerHTML =
+                text2.toLowerCase();
+        }
+
+
+        /*3rd Example*/
+        let text3 = "Hello";
+        let text4 = "World!";
+        let text5 = text3.concat(" ", text4);
+        document.getElementById("demo3").innerHTML = text5;
+
+
+        /*4th Example*/
+        let text6 = "Hello" + " " + "World!";
+        // let text6 = "Hello".concat(" ", "World!"); //same
+        document.getElementById("demo4").innerHTML = text6;
+
+    </script>
+</body>
+
+</html>

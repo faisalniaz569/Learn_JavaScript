@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Comparison</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Comparison</h1>
+    <h2>The () ? : Ternary Operator</h2>
+
+    <h3>Conditional (Ternary) Operator</h3>
+
+    <p>Syntax
+        variablename = (condition) ? value1:value2 </p>
+
+    <p>Input your age and click the button:</p>
+
+    <input id="age" value="18" />
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+
+    <hr>
+
+    <h1>JavaScript Operators</h1>
+    <h2>The Nullish Coalescing Operator (??)</h2>
+
+
+    <p>The ?? operator returns the first argument if it is not nullish (null or undefined). Otherwise it returns the second.</p>
+
+    <p id="demo2"></p>
+
+
+    <script>
+        /*Example: 01*/
+
+        function myFunction() {
+            let age = document.getElementById("age").value;
+            let voteable = (age < 18) ? "Too young" : "Old enough";
+            document.getElementById("demo").innerHTML = voteable + " to vote.";
+        }
+
+        /*Example: 02*/
+        let name = null;
+        let text = "missing";
+        let result = name ?? text;
+        document.getElementById("demo2").innerHTML = "The name is " + result;
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Property delete</title>
+</head>
+
+<body>
+
+    <h2>The delete Operator</h2>
+
+    <p>After deleting the color property, myCar.color is:</p>
+    <p id="demo"></p>
+
+    <script>
+        const myCar = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        };
+        delete myCar.color;
+
+        document.getElementById("demo").innerHTML = myCar.color;
+
+    </script>
+
+
+</body>
+
+</html>

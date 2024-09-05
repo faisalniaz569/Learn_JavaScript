@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Sort</title>
+</head>
+
+<body>
+
+    <h2>Numeric Sort</h2>
+
+    <p>Sort the array in ascending order:</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <p id="demo3"></p>
+
+    <script>
+        /* Example: 01 */
+
+        const points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("demo1").innerHTML = points;
+
+        points.sort(function(a, b) {
+            return a - b
+        });
+        document.getElementById("demo2").innerHTML = points;
+
+        /* Example: 02 */
+        points.sort(function(a, b) {
+            return b - a
+        });
+        document.getElementById("demo3").innerHTML = points;
+
+    </script>
+
+</body>
+
+</html>

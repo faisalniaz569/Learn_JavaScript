@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow function</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Functions</h1>
+
+    <p>This example shows the syntax of a function, without the use of arrow function syntax.</p>
+
+    <!--Example: 01-->
+    <p id="demo"></p>
+
+    <!--Example: 02-->
+    <p id="demo2"></p>
+
+    <script>
+        let hello = "";
+
+        /* Beofore arrow */
+        hello = function() {
+            return "Hello World!";
+        }
+
+        document.getElementById("demo").innerHTML = hello();
+
+        /* with arrow */
+        hello = () => {
+            return "Hello World!";
+        }
+
+        document.getElementById("demo2").innerHTML = hello();
+
+    </script>
+
+
+</body>
+
+</html>

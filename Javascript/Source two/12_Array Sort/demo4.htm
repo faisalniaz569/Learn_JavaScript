@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array sort</title>
+</head>
+
+<body>
+
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The sort() Method</h2>
+
+    <h3>Example 01: </h3>
+    <p>points = [40, 100, 1, 5, 25, 10];</p>
+    <p>The lowest number is <span id="demo"></span>.</p>
+
+    <h3>Example 02: </h3>
+    <p>points = [40, 100, 1, 5, 25, 10];</p>
+    <p>The highest number is <span id="demo2"></span>.</p>
+
+
+    <h2>The Math.min() Method</h2>
+    <p>The lowest number is <span id="demo3"></span>.</p>
+
+
+    <h2>The Math.max() Method</h2>
+    <p>The highest number is <span id="demo4"></span>.</p>
+
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+
+        //Example 01
+
+        points.sort(function(a, b) {
+            return a - b
+        });
+        document.getElementById("demo").innerHTML = points[0];
+
+        // Example 02
+
+        points.sort(function(a, b) {
+            return b - a
+        });
+        document.getElementById("demo2").innerHTML = points[0];
+
+
+        // Example 03
+
+        document.getElementById("demo3").innerHTML = myArrayMin(points);
+
+        function myArrayMin(arr) {
+            return Math.min.apply(null, arr);
+        }
+
+        // Example 04
+
+        document.getElementById("demo4").innerHTML = myArrayMax(points);
+
+        function myArrayMax(arr) {
+            return Math.max.apply(null, arr);
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

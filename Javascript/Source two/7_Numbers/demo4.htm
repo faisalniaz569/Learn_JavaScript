@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Numeric Strings</title>
+</head>
+
+<body>
+
+
+    <!--
+   
+       JavaScript strings can have numeric content. 
+       x = 100;      // number  
+
+       y = "100";    // string
+   
+    -->
+    
+    <h1>Numeric Strings perform in arithmatic operator.</h1>
+    
+
+    <h3>Example 01:</h3>
+    <p>This will work for divide.</p>
+
+    <p id="demo"></p>
+    
+    
+    <h3>Example 02:</h3>
+    <p>This will work for multiple.</p>
+
+    <p id="demo2"></p>
+    
+    
+    <h3>Example 03:</h3>
+    <p>This will work for subtract.</p>
+
+    <p id="demo3"></p>
+    
+    
+    <h3>Example 04:</h3>
+    <p>This will not work for adding.</p>
+
+    <p id="demo4"></p>
+
+    <script>
+        /* Example: 01 */
+        
+        let x = "100";
+        let y = "10";
+        let z = x / y;
+        
+        document.getElementById("demo").innerHTML = "100 / 10 = " + z;
+        
+        /* Example: 02 */
+        let z2 = x * y;
+        
+        document.getElementById("demo2").innerHTML = "100 * 10 = " + z2;
+        
+        /* Example: 03 */
+        let z3 = x - y;
+        
+        document.getElementById("demo3").innerHTML = "100 - 10 = " + z3;
+        
+        /* Example: 04 */
+        let z4 = x + y;
+        
+        document.getElementById("demo4").innerHTML = "100 + 10 = " + z4;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript New array</title>
+</head>
+
+<body>
+
+
+    <h1>JavaScript Arrays</h1>
+    <h2>Creating an Array</h2>
+
+    <p>Avoid using new Array(). Use [] instead.</p>
+
+    <p id="demo"></p>
+    
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+        const points = new Array(40, 100, 1, 5, 25, 10);
+        //const points = [40, 100, 1, 5, 25, 10];
+        const points2 = new Array(40, 100, 1);
+        const points3 = new Array(40, 100);
+        const points4 = new Array(40); 
+        const points5 = [40]; 
+        
+        
+        document.getElementById("demo").innerHTML = points[0];
+        document.getElementById("demo2").innerHTML = points2;
+        document.getElementById("demo3").innerHTML = points3;
+        document.getElementById("demo4").innerHTML = points4;
+        document.getElementById("demo5").innerHTML = points5;
+        document.getElementById("demo6").innerHTML = points4[0];
+        
+        //new Array(40) and [40] is not same.
+        
+
+    </script>
+
+</body>
+
+</html>

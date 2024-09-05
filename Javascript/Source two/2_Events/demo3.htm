@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Events</title>
+    <style>
+        div {
+            width: 150px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript HTML Events</h1>
+    <h2>The mouse events Attribute</h2>
+
+    <p>This example demonstrates the difference between onmousemove, onmouseenter and onmouseover.</p>
+    
+    <!--onmousemove-->
+    <div onmousemove="myMoveFunction()">
+        <p>onmousemove</p>
+        <p id="demo_1">Mouse over me!</p>
+    </div>
+    
+    <!--onmouseenter-->
+    <div onmouseenter="myEnterFunction()">
+        <p>onmouseenter</p>
+        <p id="demo_2">Mouse over me!</p>
+    </div>
+    
+    <!--onmouseover-->
+    <div onmouseover="myOverFunction()">
+        <p>onmouseover</p>
+        <p id="demo_3">Mouse over me!</p>
+    </div>
+    
+    <!--onmouseout-->
+    <div onmouseout="bigTxt(this)">Faisal niaz</div>
+    
+    
+    <!-- mouseDown and mouseUp -->
+    <p>Click the text below</p>
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        The mouseDown() function sets the color of this text to red.
+        The mouseUp() function sets the color of this text to blue.
+    </p>
+    
+    <hr>
+
+    <p>The onmousemove event occurs every time the mouse pointer is moved over an element.</p>
+    <p>The mouseenter event only occurs when the mouse pointer enters an element. </p>
+    <p>The onmouseover event occurs when the mouse pointer enters a div element.</p>
+    <p>The onmouseout event occurs when the mouse pointer out a div element.</p>
+    <p>The mouseDown and mouseUp event occurs when the mouse pointer up and down in div element.</p>
+
+
+    <script src="JS/myScript.js"></script>
+    <script src="JS/myJs.js"></script>
+
+</body>
+
+</html>

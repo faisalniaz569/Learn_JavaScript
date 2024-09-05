@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Object methods</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Numbers</h1>
+    <h2>The isInteger() Method</h2>
+
+    <p>The isInteger() method returns true if the argument is an integer.</p>
+    <p>Otherwise it returns false.</p>
+
+    <p id="demo"></p>
+
+    <h2>The isSafeInteger() Method</h2>
+
+    <p>The isSafeInteger() method returns true if the argument is a safe integer.</p>
+    <p>Otherwise it returns false.</p>
+
+    <p id="demo2"></p>
+
+
+    <h2>The parseFloat() Method</h2>
+
+    <p>Number.parseFloat() converts strings to numbers:</p>
+
+    <p id="demo3"></p>
+
+
+    <h2>The parseInt() Method</h2>
+
+    <p>Number.parseInt() converts strings to whole numbers:</p>
+
+    <p id="demo4"></p>
+
+
+    <script>
+        /* Example: 01 */
+
+        document.getElementById("demo").innerHTML =
+            Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+
+        /* Example: 02 */
+
+        document.getElementById("demo2").innerHTML =
+            Number.isSafeInteger(10) + "<br>" + Number.isSafeInteger(12345678901234567890);
+
+
+        /* Example: 03 */
+
+        document.getElementById("demo3").innerHTML =
+            Number.parseFloat("10") + "<br>" +
+            Number.parseFloat("10.33") + "<br>" +
+            Number.parseFloat("10 20 30") + "<br>" +
+            Number.parseFloat("10 years") + "<br>" +
+            Number.parseFloat("years 10");
+
+        /* Example: 04 */
+
+        document.getElementById("demo4").innerHTML =
+            Number.parseInt("-10") + "<br>" +
+            Number.parseInt("-10.33") + "<br>" +
+            Number.parseInt("10") + "<br>" +
+            Number.parseInt("10.33") + "<br>" +
+            Number.parseInt("10 6") + "<br>" +
+            Number.parseInt("10 years") + "<br>" +
+            Number.parseInt("years 10");
+
+    </script>
+
+
+</body>
+
+</html>

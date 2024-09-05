@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <h2>Bracket Indexing</h2>
+
+    <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+    <p id="demo"></p>
+
+    <h3>Changing an Array Element</h3>
+    <p>This statement changes the value of the first element in cars.</p>
+
+
+    <p id="demo2"></p>
+
+    <h3>Converting an Array to a String</h3>
+
+    <p id="demo3"></p>
+
+    <p>Arrays use numbers to access its elements.</p>
+    <p id="demo4"></p>
+
+    <p>JavaScript uses names to access object properties.</p>
+    <p id="demo5"></p>
+    
+    <p>The length property returns the length of an array.</p>
+    <p id="demo6"></p>
+    
+    <h3>Accessing the Last Array Element</h3>
+    <p id="demo7"></p>
+    
+    <h3>Accessing the first Array Element</h3>
+    <p id="demo8"></p>
+    
+    <p id="demo9"></p>
+
+
+    <script>
+        /* Example: 01 */
+        const cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo").innerHTML = cars[0];
+
+        /*
+            
+            Note: Array indexes start with 0.
+            [0] is the first element. [1] is the second element.
+
+        */
+
+        /* Example: 02 */
+        cars[0] = "Opel";
+
+        document.getElementById("demo2").innerHTML = cars;
+
+        /* Example: 03 */
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo3").innerHTML = fruits.toString();
+
+
+        /* Example: 04 */
+        const person = ["John", "Doe", 46];
+        document.getElementById("demo4").innerHTML = person[0];
+
+
+        /* Example: 05 */
+        const person2 = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 46
+        };
+        document.getElementById("demo5").innerHTML = person2.firstName;
+        
+        /* Example: 06 */
+        let size = fruits.length;
+        document.getElementById("demo6").innerHTML = size;
+        
+        
+        /* Example: 07 */
+        document.getElementById("demo7").innerHTML = fruits[fruits.length-1];
+        
+        /* Example: 08 */
+        document.getElementById("demo8").innerHTML = fruits[0];
+        
+        /* Example: 09 */
+        const cars2 = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo9").innerHTML = cars2;
+
+    </script>
+
+
+</body>
+
+</html>

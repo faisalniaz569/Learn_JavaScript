@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Destructing</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Objects</h1>
+    <h2>Object Destructuring</h2>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        // Create an Object
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50
+        };
+
+        // Destructuring
+        let {
+            firstName,
+            lastName
+        } = person;
+
+        // Display Primitive Values
+        document.getElementById("demo").innerHTML =
+            firstName + " " + lastName;
+
+        document.getElementById("demo2").innerHTML = firstName + " " + lastName;
+
+    </script>
+
+
+</body>
+
+</html>

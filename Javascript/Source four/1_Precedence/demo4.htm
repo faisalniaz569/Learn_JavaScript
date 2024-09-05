@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Precedence Values</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Operators</h1>
+    <h2>The . Operator</h2>
+
+    <h3>Example: 1</h3>
+    <p>Car name is:</p>
+    <p id="demo"></p>
+
+
+    <h3>Example: 2</h3>
+    <p>Car name is:</p>
+    <p id="demo2"></p>
+
+    <script>
+        /*Example: 01*/
+
+        const car = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        };
+        document.getElementById("demo").innerHTML = car.type;
+
+        /* Example: 02 */
+
+        const car2 = {
+            type: "BMW",
+            model: "M70",
+            color: "Blue"
+        };
+        document.getElementById("demo2").innerHTML = car2["type"];
+
+    </script>
+
+
+</body>
+
+</html>

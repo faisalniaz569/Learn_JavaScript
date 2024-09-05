@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <h3>Looping an Array</h3>
+    
+    <p>This loop is in fLen.</p>
+    <p id="demo"></p>
+    
+    <p>This loop is in forEach.</p>
+    <p id="demo2"></p>
+
+
+    <script>
+        /* Example: 01 */
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let fLen = fruits.length;
+
+        let text = "<ul>";
+        for (let i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+
+        document.getElementById("demo").innerHTML = text;
+
+
+        /* Example: 02 */
+        let text2 = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+
+        document.getElementById("demo2").innerHTML = text2;
+
+        function myFunction(value) {
+            text2 += "<li>" + value + "</li>";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

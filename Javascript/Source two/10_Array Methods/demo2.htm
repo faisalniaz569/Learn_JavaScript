@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Methods</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The join() Method</h2>
+
+    <p>The join() method joins array elements into a string.</p>
+    <p>It this example we have used " * " as a separator between the elements:</p>
+
+    <p id="demo"></p>
+
+    <h2>The pop() Method</h2>
+
+    <p id="demo2"></p>
+
+    <h2>The push() Method</h2>
+
+    <p id="demo3"></p>
+
+    <p>The push() method returns the new array length:</p>
+    <p id="demo4"></p>
+
+    <p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+    <p id="demo5"></p>
+
+    <p>The unshift() method adds new elements to the beginning of an array:</p>
+    <p id="demo6"></p>
+
+    <script>
+        /* Example: 01 */
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.join(" * ");
+        
+        /* Example: 06 */
+        fruits.unshift("Lemon");
+        document.getElementById("demo6").innerHTML = fruits;
+
+        /* Example: 02 */
+        fruits.pop();
+        document.getElementById("demo2").innerHTML = fruits;
+
+        /* Example: 03 */
+        fruits.push("pineapple");
+        document.getElementById("demo3").innerHTML = fruits;
+
+        /* Example: 04 */
+        document.getElementById("demo4").innerHTML = fruits.push("pineapple");
+
+        /* Example: 05 */
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits2.shift();
+        document.getElementById("demo5").innerHTML = fruits2;
+
+        
+
+    </script>
+
+</body>
+
+</html>

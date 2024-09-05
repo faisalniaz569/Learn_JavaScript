@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bitwise AND</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Bitwise AND Assignment</h2>
+    <h3>The &amp;= Operator</h3>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 100;
+        x &= 5;
+        document.getElementById("demo").innerHTML = "Value of x is: " + x;
+        
+        /*
+            x = 100;  // 0000 0000 0000 0000 0000 0000 0110 0100    --- 100
+            x &=  5;  // 0000 0000 0000 0000 0000 0000 0000 0101    --- 5
+            
+                result:  0000 0000 0000 0000 0000 0000 0000 0100    --- 4
+        */
+        
+    </script>
+
+
+</body>
+
+</html>

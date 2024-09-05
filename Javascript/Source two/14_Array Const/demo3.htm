@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Const</title>
+</head>
+
+<body>
+
+    <h1>Array Const Block Scope</h1>
+
+    <p>
+        An array declared in a block is not the same as an array declared outside the block
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["Saab", "Volvo", "BMW"];
+        // Here cars[0] is "Saab"
+        {
+            const cars = ["Toyota", "Volvo", "BMW"];
+            // Here cars[0] is "Toyota"
+        }
+        // Here cars[0] is "Saab"
+        document.getElementById("demo").innerHTML = cars[0];
+
+    </script>
+</body>
+
+</html>

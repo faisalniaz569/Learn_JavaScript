@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Iteration</title>
+</head>
+
+<body>
+
+    <h2>The map() Method</h2>
+
+    <p>Create a new array by performing a function on each array element:</p>
+
+    <p>numbers1 = [45, 4, 9, 16, 25];</p>
+    <p>Output numbers = <span id="demo"></span></p>
+
+    <h2>The flatmap() Method</h2>
+
+    <p>myArr = [1, 2, 3, 4, 5, 6];</p>
+    <p id="demo2"></p>
+
+
+    <h2>The filter() Method</h2>
+    <p id="demo3"></p>
+
+
+    <h2>The reduce() Method</h2>
+    <p id="demo4"></p>
+    
+    <h2>The reduceright() Method</h2>
+    <p id="demo5"></p>
+
+
+
+
+    <script>
+        /* Example: 01 */
+
+        const numbers1 = [45, 4, 9, 16, 25];
+        const numbers2 = numbers1.map(myFunction);
+
+        document.getElementById("demo").innerHTML = numbers2;
+
+        function myFunction(value, index, array) {
+            return value * 2;
+        }
+
+
+        /* Example: 02 */
+
+        const myArr = [1, 2, 3, 4, 5, 6];
+        const newArr = myArr.flatMap((x) => x * 2);
+        document.getElementById("demo2").innerHTML = newArr;
+
+
+        /* Example: 03 */
+
+        const over18 = numbers1.filter(myFunction2);
+
+        document.getElementById("demo3").innerHTML = over18;
+
+        function myFunction2(value, index, array) {
+            return value > 18;
+        }
+
+        /* Example: 04 */
+
+        let sum = numbers1.reduce(myFunction3);
+        let sum2 = numbers1.reduceRight(myFunction4);
+
+        document.getElementById("demo4").innerHTML = "The sum is " + sum;
+
+        function myFunction3(total, value, index, array) {
+            return total + value;
+        }
+        
+        document.getElementById("demo5").innerHTML = "The sum is " + sum2;
+        
+        function myFunction4(total, value, index, array) {
+            return total + value;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

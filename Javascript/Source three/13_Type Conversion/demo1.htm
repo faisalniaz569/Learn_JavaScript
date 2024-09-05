@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Type conversion </title>
+</head>
+
+<body>
+
+    <h1>JavaScript Numbers</h1>
+    <h2>The Number() Method</h2>
+
+    <p>The Number() metod converts a variable (or value) into a number:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            // These will convert
+            "This is will be converted. <br><br>" +
+
+            Number("3.14") + "<br>" +
+            Number(Math.PI) + "<br>" +
+            Number("    ") + "<br>" +
+            Number("") + "<br><br><br>" +
+
+            // These will not convert
+            "This is will not be converted. <br><br>" +
+            Number("99 88") + "<br>" +
+            Number("John") + "<br>";
+
+    </script>
+
+
+</body>
+
+</html>

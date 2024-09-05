@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+
+    <h3>Example: 01</h3>
+    <p id="demo"></p>
+
+    <h3>Example: 02</h3>
+    <p id="demo2"></p>
+
+    <h3>Example: 03</h3>
+    <p id="demo3"></p>
+
+    <h3>Example: 04</h3>
+    <p id="demo4"></p>
+
+    <script>
+        /* Example: 01 */
+        const cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo").innerHTML = cars;
+
+        /* Example: 02 */
+        const cars2 = [
+            "Saab",
+            "Volvo",
+            "BMW"
+        ];
+        document.getElementById("demo2").innerHTML = cars2;
+
+        /* Example: 03 */
+        const cars3 = [];
+        cars3[0] = "Saab";
+        cars3[1] = "Volvo";
+        cars3[2] = "BMW";
+        document.getElementById("demo3").innerHTML = cars3;
+
+        /* Example: 04 */
+        const cars4 = new Array("Saab", "Volvo", "BMW");
+        document.getElementById("demo4").innerHTML = cars4;
+
+    </script>
+
+
+</body>
+
+</html>

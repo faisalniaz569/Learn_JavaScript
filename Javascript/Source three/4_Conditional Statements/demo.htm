@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+
+    <h3>The if Statement</h3>
+
+    <!--
+        Syntax:
+        
+        if (condition) {
+            // block of code to be executed if the condition is true
+        }
+        
+        Note that: if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.
+    -->
+
+
+    <p>Display "Good day!" if the hour is less than 18:00:</p>
+
+    <p id="demo">Good Evening!</p>
+
+    <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "Good day!";
+        }
+
+    </script>
+
+</body>
+
+</html>

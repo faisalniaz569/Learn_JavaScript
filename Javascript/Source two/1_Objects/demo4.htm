@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessing Object Properties</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <script>
+        // Create an object:
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566
+        };
+
+        // Display some data from the object:
+        document.getElementById("demo").innerHTML =
+            person.firstName + " " + person.lastName;
+
+        // Display some data from the object:
+        document.getElementById("demo2").innerHTML =
+            person["firstName"] + " " + person["lastName"];
+
+    </script>
+
+</body>
+
+</html>

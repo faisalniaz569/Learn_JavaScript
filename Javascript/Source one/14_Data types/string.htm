@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Strings</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Strings</h2>
+
+    <p>Strings are written with quotes. You can use single or double quotes:</p>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <script>
+        // 1st example:
+        let carName1 = "Volvo XC60";
+        let carName2 = 'Volvo XC60';
+
+        document.getElementById("demo").innerHTML =
+            carName1 + "<br>" +
+            carName2;
+
+
+        // 2nd example:
+        let answer1 = "It's alright";
+        let answer2 = "He is called 'Johnny'";
+        let answer3 = 'He is called "Johnny"';
+
+        document.getElementById("demo2").innerHTML =
+            answer1 + "<br>" +
+            answer2 + "<br>" +
+            answer3;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Concept of Data Types</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    
+    <p id="demo2"></p>
+    
+    <p id="demo3"></p>
+    
+    <p id="demo4"></p>
+
+    <script>
+        let x = 16 + "Volvo";
+        document.getElementById("demo").innerHTML = x;
+        
+        let y = "Volvo" + 16;
+        document.getElementById("demo2").innerHTML = y;
+        
+        let z = 16 + 4 + "Volvo";
+        document.getElementById("demo3").innerHTML = z;
+        
+        let a = "Volvo" + 16 + 4;
+        document.getElementById("demo4").innerHTML = a;
+    </script>
+
+</body>
+
+</html>

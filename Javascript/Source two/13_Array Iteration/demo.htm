@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Iteration</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The forEach() Method</h2>
+
+    <p>Call a function once for each array element:</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value, index, array) {
+            txt += value + "<br>";
+        }
+        
+        
+        let txt2 = "";
+        numbers.forEach(myFunction2);
+        document.getElementById("demo2").innerHTML = txt2;
+        
+        function myFunction2(value2) {
+            txt2 += value2 + "<br>";
+        }
+
+        /*
+        
+            Note that the function takes 3 arguments:
+
+            . The item value
+            . The item index
+            . The array itself
+
+        
+        */
+
+    </script>
+
+
+</body>
+
+</html>

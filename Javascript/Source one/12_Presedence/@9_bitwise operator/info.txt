@@ -1,0 +1,34 @@
+Bitwise operators work on bits. 0 and 1 is binary.
+Bitwise operators work on 32 bits number.
+
+& (AND), | (OR), ~ (NOT), ^ (XOR)
+
+& (AND) operator:
+
+0 0 => 0
+0 1 => 0
+1 0 => 0
+1 1 => 1
+
+| (OR) operator:
+
+0 0 => 0
+0 1 => 1
+1 0 => 1
+1 1 => 1
+
+~ (NOT) operator:
+
+0 => 1
+0 => 1
+1 => 0
+1 => 0
+
+^ (XOR) operator:
+
+0 0 => 0
+0 1 => 1
+1 0 => 1
+1 1 => 0
+
+        

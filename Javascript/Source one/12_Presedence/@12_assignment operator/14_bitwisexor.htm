@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bitwise XOR</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Bitwise XOR</h1>
+    <h2>The ^ Operator</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 5 ^ 1;
+        
+        /*
+            Bitwise XOR:
+            -------------
+            Performed of bits:
+            ------------------
+            
+            Operation       Result
+            ----------      -------
+            0   ^   0       0           
+            0   ^   1       1
+            1   ^   0       1
+            1   ^   1       0
+            
+            Operation                   Result
+            ----------                  -------
+            1111    ^   0000            1111
+            1111    ^   0001            1110
+            1111    ^   0010            1101
+            1111    ^   0100            1011
+            
+        */
+        
+        /*
+        
+            Above Example result:
+            ---------------------
+            x = 5;   // 0000 0101    ------  5
+            x = 1;   // 0000 0001    ------  1
+            
+            result:  // 0000 0100    ------  4
+        */
+
+    </script>
+
+
+</body>
+
+</html>

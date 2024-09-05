@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Function With Parameters</title>
+</head>
+
+<body>
+
+
+    <h1>JavaScript Functions</h1>
+    <h2>The Arrow Function</h2>
+
+    <p>This example shows an Arrow Function with a parameter.</p>
+
+    <!--Example: 01-->
+    <p id="demo"></p>
+
+    <!--Example: 02-->
+    <p id="demo2"></p>
+
+    <script>
+        /*Example: 01*/
+        let hello = "";
+
+        hello = (val) => "Hello " + val;
+
+        document.getElementById("demo").innerHTML = hello("Universe!");
+
+        /*Example: 02*/
+        hello = val => "Hello " + val;
+
+        document.getElementById("demo2").innerHTML = hello("world!");
+
+    </script>
+
+
+</body>
+
+</html>

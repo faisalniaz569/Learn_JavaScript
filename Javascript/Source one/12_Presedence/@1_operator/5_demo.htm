@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New with and without arguments</title>
+</head>
+
+<body>
+
+    <h1>JavaScript new Date() and only without arguments</h1>
+    <p>A Date object can be created with a specified date and time:</p>
+
+    <p id="demo"></p>
+    
+    <p>new Date() without arguments, creates a date object with the current date and time:</p>
+    <p id="demo2"></p>
+
+    <script>
+        const d = new Date("June 5, 2022");
+        document.getElementById("demo").innerHTML = d;
+        
+        
+        const date = new Date();
+        document.getElementById("demo2").innerHTML = date;
+    </script>
+
+
+</body>
+
+</html>

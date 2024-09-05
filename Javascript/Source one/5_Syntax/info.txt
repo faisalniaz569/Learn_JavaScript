@@ -1,0 +1,99 @@
+* JavaScript syntax is the set of rules.
+
+// How to create variables:
+var x;
+let y;
+
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;
+
+
+The JavaScript syntax defines two types of values:
+
+  * Fixed values,
+  * Variable values
+  
+
+# Fixed values are called Literals.
+# Variable values are called Variables.
+
+Example:
+
+* Fixed values - 
+1. Numbers:
+1000, 10.5
+
+2. Strings -
+"John Doe", 'John Doe'
+
+* Variable values -
+
+In a programming language, variables are used to store data values.
+JavaScript uses the keywords var, let and const to declare variables.
+
+An equal sign is used to assign values to variables.
+
+In this example, x is defined as a variable. Then, x is assigned (given) the value 6.
+
+Example: x = 6.
+
+
+** JavaScript Operators -
+1. Arithmatic operator(+ - * /)
+2. Assignment operator(=)
+
+
+*** JavaScript Identifiers / Names
+
+Identifiers are JavaScript names.
+
+Identifiers are used to name variables and keywords, and functions.
+
+The rules for legal names are the same in most programming languages.
+
+A JavaScript name must begin with:
+
+   => A letter (A-Z or a-z)
+   => A dollar sign ($)
+   => Or an underscore (_)
+   
+   
+# Hyphens:
+
+first-name, last-name, master-card, inter-city.
+
+Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+
+
+# Underscore:
+
+first_name, last_name, master_card, inter_city.
+
+Upper Camel Case (Pascal Case):
+
+FirstName, LastName, MasterCard, InterCity.
+
+Lower Camel Case:
+
+JavaScript programmers tend to use camel case that starts with a lowercase letter:
+
+firstName, lastName, masterCard, interCity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

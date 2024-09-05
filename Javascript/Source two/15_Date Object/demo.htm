@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Date Objects</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Dates</h1>
+    <h2>Using new Date()</h2>
+    <p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+    <!-- Example: 01 -->
+
+    <h4>Example: 01</h4>
+    <p id="demo"></p>
+
+    <!-- Example: 02 -->
+    <h4>Example: 02</h4>
+    <p id="demo2"></p>
+
+    <!-- Example: 03 -->
+    <h4>Example: 03</h4>
+    <p id="demo3"></p>
+
+    <h3>Previous Century</h3>
+    <!-- Example: 04 -->
+    <h4>Example: 04</h4>
+    <p id="demo4"></p>
+
+    <!-- Example: 05 -->
+    <h4>Example: 05</h4>
+    <p id="demo5"></p>
+
+    <script>
+        /* Example: 01 */
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+
+        /*Example: 02*/
+        const d2 = new Date("2022-03-25");
+        document.getElementById("demo2").innerHTML = d2;
+
+        /*Example: 03*/
+        /*
+            7 numbers specify year, month, day, hour, minute, second, and millisecond.
+        */
+        const d3 = new Date(2018, 11, 24, 10, 33, 30, 0);
+        document.getElementById("demo3").innerHTML = d3;
+
+        /*
+            Note: 
+            
+            JavaScript counts months from 0 to 11:
+
+            January = 0.
+
+            December = 11.
+        */
+
+        /*Example: 04*/
+        const d4 = new Date(99, 11, 24);
+        document.getElementById("demo4").innerHTML = d4;
+
+        /*Example: 05*/
+        const d5 = new Date(9, 11, 24);
+        document.getElementById("demo5").innerHTML = d5;
+
+    </script>
+
+
+
+</body>
+
+</html>

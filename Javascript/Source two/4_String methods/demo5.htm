@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>String Methods</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The trim() Method</h2>
+
+    <p id="demo"></p>
+
+
+    <h2>The trimStart() Method</h2>
+
+    <p id="demo2"></p>
+
+
+    <h2>The trimEnd() Method</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+        /* 1st example: */
+        let text1 = "     Hello World!     ";
+        let text2 = text1.trim();
+
+        document.getElementById("demo").innerHTML =
+            "Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+
+
+        /* 2nd example: */
+        let text3 = "     Hello World!     ";
+        let text4 = text3.trimStart();
+
+        document.getElementById("demo2").innerHTML =
+            "Length text3 = " + text3.length + "<br>Length text4 = " + text4.length;
+
+
+        /* 3rd example: */
+        let text5 = "     Hello World!     ";
+        let text6 = text5.trimEnd();
+
+        document.getElementById("demo3").innerHTML =
+            "Length text5 = " + text5.length + "<br>Length text6 = " + text6.length;
+
+    </script>
+
+</body>
+
+</html>

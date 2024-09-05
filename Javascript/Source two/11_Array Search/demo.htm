@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Search</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The indexOf() Method</h2>
+    <p id="demo"></p>
+
+
+    <h2>The lastindexOf() Method</h2>
+    <p id="demo2"></p>
+
+    <h2>The includes() Method</h2>
+    <p id="demo3"></p>
+
+
+    <h2>The find() Method</h2>
+    <p id="demo4"></p>
+
+
+    <h2>The findIndex() Method</h2>
+    <p id="demo5"></p>
+
+    <h2>The findLast() Method</h2>
+    <p id="demo6"></p>
+
+
+    <h2>The findLastIndex() Method</h2>
+    <p id="demo7"></p>
+
+    <script>
+        /* Example: 01 */
+
+        const fruits = ["Apple", "Orange", "Apple", "Mango"];
+        let position = fruits.indexOf("Apple") + 1; // array.indexOf(item, start) 
+
+        document.getElementById("demo").innerHTML = "Apple is found in position " + position;
+
+        /* Example: 02 */
+
+        let position2 = fruits.lastIndexOf("Apple") + 1; // array.lastIndexOf(item, start)
+        document.getElementById("demo2").innerHTML = "Apple is found in position " + position2;
+
+
+        /* Example: 03 */
+
+        document.getElementById("demo3").innerHTML = fruits.includes("Mango"); // array.includes(search-item) 
+
+        /* Example: 04 */
+
+        const numbers = [4, 9, 16, 25, 29];
+        let first = numbers.find(myFunction);
+
+        document.getElementById("demo4").innerHTML = "First number over 18 is " + first;
+
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+
+        /* Example: 05 */
+
+        document.getElementById("demo5").innerHTML = "First number over 18 has index " + numbers.findIndex(myFunction);
+
+        /* Example: 06 */
+
+        const temp = [27, 28, 30, 40, 42, 35, 30];
+        let high = temp.findLast(x => x > 40);
+
+        document.getElementById("demo6").innerHTML = "The last temperature over 40 was " + high;
+
+        /* Example: 07 */
+        let pos = temp.findLastIndex(x => x > 40);
+
+        document.getElementById("demo7").innerHTML = "The last temperature over 40 was in position " + pos;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+What is presedence?
+
+=> Operator precedence in JavaScript determines the priority of operators in an operation.
+It determines which operators have higher precedence than others, and thus tells us the order to perform a given mathematical expression.
+
+
+// Shift operator:
+
+1. Left shift,
+2. Right shift,
+3. Unsigned right shift.
+
+// Bitwise operator:
+
+1. Bitwise and (&),
+2. Bitwise or (|),
+3. Bitwise XOR (^),
+4. Bitwise NOT (~),
+5. Bitwise left shift (<<),
+6. Bitwise right shift (>>),
+7. Bitwise right shift with zero (>>>).
+
+// bits - 0, 1
+
+// bytes
+
+8 bits - 1 byte
+
+=============
+            
+0       0000
+1       0001
+2       0010
+3       0011
+4       0100
+5       0101
+6       0110
+7       0111
+8       1000
+9       1001
+10      1010
+11      1011
+12      1100
+13      1101
+14      1110
+15      1111
+
+
+// Logical operator:
+
+AND (&&),
+OR  (||),
+NOT (!)
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Template Strings</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Template Strings</h1>
+
+    <!--1st Example:-->
+    <h4>Example 01:</h4>
+    <p>Templates use back-ticks (``) to define a string:</p>
+    <p id="demo"></p>
+
+
+    <!--2nd Example:-->
+    <h4>Example 02:</h4>
+    <p>With back-ticks, you can use both single and double quotes inside a string:</p>
+    <p id="demo2"></p>
+
+
+    <!--3rd Example:-->
+    <h4>Example 03:</h4>
+    <p>Templates allow multiline strings:</p>
+    <p id="demo3"></p>
+
+    <script>
+        /*1st Example:*/
+        let text = `Hello world!`;
+        document.getElementById("demo").innerHTML = text;
+
+        /*2nd Example:*/
+        let text2 = `He's often called "Johnny"`;
+        document.getElementById("demo2").innerHTML = text2;
+
+        /*3rd Example:*/
+        let text3 =
+        `The quick
+        brown fox
+        jumps over
+        the lazy dog`;
+
+        document.getElementById("demo3").innerHTML = text3;
+
+    </script>
+
+
+</body>
+
+</html>

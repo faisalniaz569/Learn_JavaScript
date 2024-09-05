@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Re-declare variables</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var carName = "Volvo";
+        var carName;
+        document.getElementById("demo").innerHTML = carName;
+        
+        /*
+            Re-declare only use in var.
+            It is not use in let and const.
+        
+        */
+
+    </script>
+
+</body>
+
+</html>

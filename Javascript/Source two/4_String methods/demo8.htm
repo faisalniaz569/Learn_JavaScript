@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>String Methods</title>
+</head>
+
+<body>
+
+
+    <h1>JavaScript String Methods</h1>
+    <p>Try to replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo">Please visit Microsoft!</p>
+
+
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo2">Please visit Microsoft!</p>
+
+    
+    <button onclick="myFunction3()">Try it</button>
+
+    <p id="demo3">Please visit Microsoft and Microsoft!</p>
+    
+
+    <script>
+        /*1st Example:*/
+        function myFunction() {
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML =
+                text.replace("MICROSOFT", "W3Schools");
+        }
+
+        /* 2nd Example: */
+        function myFunction2() {
+            let text2 = document.getElementById("demo2").innerHTML;
+            document.getElementById("demo2").innerHTML =
+                text2.replace(/MICROSOFT/i, "W3Schools");
+        }
+        
+        /* 3rd Example: */
+        function myFunction3() {
+            let text3 = document.getElementById("demo3").innerHTML;
+            document.getElementById("demo3").innerHTML =
+                text3.replace(/Microsoft/g, "W3Schools");
+        }
+
+    </script>
+
+    <p>The replace() method is case sensitive. MICROSOFT (with upper-case) will not be replaced.</p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>String Methods</title>
+</head>
+
+<body>
+
+    <h2>The padStart() Method</h2>
+
+    <p>The padStart() method pads a string from the start.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+
+    <h2>The padEnd() Method</h2>
+
+    <p>The padEnd() method pads a string at the end.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+    <p id="demo4"></p>
+
+    <p id="demo5"></p>
+
+    <p id="demo6"></p>
+
+
+
+    <script>
+        /*=== padStart() Method: ===*/
+        /* 1st Example: */
+        let text = "5";
+        text = text.padStart(4, "0");
+
+        document.getElementById("demo").innerHTML = text;
+
+        /* 2nd Example: */
+        let text2 = "5";
+        document.getElementById("demo2").innerHTML = text2.padStart(4, "x");
+
+
+        /* 3rd Example: */
+        let numb = 5;
+        let text3 = numb.toString();
+        document.getElementById("demo3").innerHTML = text3.padStart(4, 0);
+
+
+        /*=== padEnd() Method: ===*/
+        /* 4th Example */
+        let text4 = "5";
+        text4 = text4.padEnd(4, "0");
+
+        document.getElementById("demo4").innerHTML = text4;
+
+
+        /* 5th Example */
+        let text5 = "5";
+        document.getElementById("demo5").innerHTML = text5.padEnd(4, "x");
+
+
+        /* 6th Example */
+        let numb1 = 5;
+        let text6 = numb1.toString();
+        document.getElementById("demo6").innerHTML = text6.padEnd(4, "x");
+
+    </script>
+
+</body>
+
+</html>

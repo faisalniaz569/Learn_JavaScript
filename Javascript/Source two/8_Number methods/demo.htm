@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Methods</title>
+</head>
+
+<body>
+
+    <h2>Example: 01</h2>
+
+    <h3>The toString() Method</h3>
+
+    <p id="demo"></p>
+
+    <h2>Example: 02</h2>
+
+    <h3>The toExponential() Method</h3>
+
+    <p id="demo2"></p>
+
+    <h2>Example: 03</h2>
+
+    <h3>The toFixed() Method</h3>
+
+    <p id="demo3"></p>
+
+
+    <h2>Example: 04</h2>
+
+    <h3>The toPrecision() Method</h3>
+
+    <p id="demo4"></p>
+
+
+    <h2>Example: 05</h2>
+
+    <h3>The valueOf() Method</h3>
+
+    <p id="demo5"></p>
+
+    <script>
+        /* Example: 01 */
+
+        let x = 123;
+        document.getElementById("demo").innerHTML =
+            x.toString() + "<br>" +
+            (123).toString() + "<br>" +
+            (100 + 23).toString();
+
+        /* Example: 02 */
+
+        let y = 9.656;
+        document.getElementById("demo2").innerHTML =
+            y.toExponential() + "<br>" +
+            y.toExponential(2) + "<br>" +
+            y.toExponential(4) + "<br>" +
+            y.toExponential(6);
+
+        /* Example: 03 */
+
+        document.getElementById("demo3").innerHTML =
+            y.toFixed(0) + "<br>" +
+            y.toFixed(2) + "<br>" +
+            y.toFixed(4) + "<br>" +
+            y.toFixed(6);
+
+        /* Example: 04 */
+
+        document.getElementById("demo4").innerHTML =
+            y.toPrecision() + "<br>" +
+            y.toPrecision(2) + "<br>" +
+            y.toPrecision(4) + "<br>" +
+            y.toPrecision(6);
+
+        /* Example: 05 */
+
+        document.getElementById("demo5").innerHTML =
+            x.valueOf() + "<br>" +
+            (123).valueOf() + "<br>" +
+            (100 + 23).valueOf();
+
+    </script>
+
+
+</body>
+
+</html>
